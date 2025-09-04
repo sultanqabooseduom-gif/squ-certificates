@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Certificates List</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 40px; }
+  h2 { color: #2c3e50; }
+  ul { list-style: none; padding: 0; }
+  li { margin: 10px 0; }
+  a { text-decoration: none; color: #2980b9; font-weight: bold; }
+</style>
+</head>
+<body>
+<h2>Certificates Verified by Sultan Qaboos University</h2>
+<ul id="certList"></ul>
+
+<script>
+  fetch('certificates.json')
+    .then(response => response.json())
+    .then(data => {
+      const list = document.getElementById('certList');
+      data.forEach(cert => {
+        const li = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = `certificate.html?name=${encodeURIComponent(cert.name)}&number=${encodeURIComponent(cert.number)}`;
+        link.textContent = `${cert.name} - ${cert.number}`;
+        li.appendChild(link);
+        list.appendChild(li);
+      });
+    });
+</script>
+</body>
+</html>
