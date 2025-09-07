@@ -54,16 +54,28 @@
     text-align: right;
     direction: rtl;
   }
+  .seals {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  .seals div {
+    text-align: center;
+  }
+  .seals img {
+    max-width: 120px;
+  }
 </style>
 </head>
 <body>
   <div class="certificate">
     <!-- لوگوی دانشگاه -->
-    <img src="sultan-qaboos.png" alt="Sultan Qaboos University Logo" class="logo">
+    <img src="sultan-gaboos.png" alt="Sultan Qaboos University Logo" class="logo">
 
     <h1>Certificate of Authenticity / شهادة أصالة الوثيقة</h1>
     <h2>Doctorate Degree / درجة الدكتوراه</h2>
 
+    <!-- بخش دو زبانه -->
     <div class="bilingual">
       <div>
         <p><strong>Full Name:</strong> Hossein Shahbazi</p>
@@ -82,6 +94,23 @@
         <p>تم إصدار هذه الشهادة من قبل جامعة السلطان قابوس، عمان، لتأكيد منح الشخص المذكور أعلاه درجة الدكتوراه من خلال برنامج المنح الدراسية وتعاون الطلاب والأساتذة الدوليين، وهي معتمدة رسمياً.</p>
       </div>
     </div>
+
+    <!-- سطر مهرها -->
+    <div class="seals">
+      <div>
+        <img src="seal-college.png" alt="عمید الکلیة"><br>
+        <span>عمید الکلیة</span>
+      </div>
+      <div>
+        <img src="seal-grad.png" alt="عمید الدراسات العلیا"><br>
+        <span>عمید الدراسات العلیا</span>
+      </div>
+      <div>
+        <img src="seal-university.png" alt="خاتم الجامعه"><br>
+        <span>خاتم الجامعه</span>
+      </div>
+    </div>
+
   </div>
 </body>
 </html>
