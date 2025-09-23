@@ -2,93 +2,48 @@
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PhD Certificate - Hossein Shahbazi</title>
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 50px;
-    background: #f9f9f9;
-  }
-  .certificate {
-    max-width: 900px;
-    margin: auto;
-    padding: 40px;
-    background: #fff;
-    border: 3px solid #2c3e50;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    text-align: center;
-  }
-  .logo {
-    max-width: 180px;
-    margin-bottom: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  h1 {
-    font-size: 28px;
-    color: #2c3e50;
-    margin-bottom: 20px;
-  }
-  h2 {
-    font-size: 22px;
-    color: #2c3e50;
-    margin-bottom: 30px;
-  }
-  p {
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: justify;
-    margin: 15px 0;
-  }
-  .bilingual {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .bilingual div {
-    width: 48%;
-    text-align: left;
-  }
-  .bilingual div.ar {
-    text-align: right;
-    direction: rtl;
-  }
-  .seals {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-  }
-  .seals div {
-    text-align: center;
-  }
-  .seals img {
-    max-width: 120px;
-  }
-  .signatures {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-  }
-  .signatures div {
-    text-align: center;
-  }
-  .signatures img {
-    max-width: 180px;
-    display: block;
-    margin: auto;
+  body { font-family: Arial, sans-serif; margin: 20px; background:#f7f7f7; color:#222; }
+  .certificate { max-width: 980px; margin: 20px auto; padding: 32px; background:#fff;
+                 border: 2px solid #2c3e50; box-shadow: 0 6px 24px rgba(0,0,0,0.06); text-align:center; }
+  .logo { max-width:220px; display:block; margin:0 auto 12px; }
+  h1 { color:#2c3e50; margin:6px 0 4px; font-size:24px; }
+  h2 { color:#2c3e50; margin:0 0 18px; font-size:18px; }
+  p { font-size:15px; line-height:1.6; margin:8px 0; text-align:justify; }
+  .bilingual { display:flex; gap:20px; justify-content:space-between; flex-wrap:wrap; margin-top:8px; }
+  .bilingual > div { flex:1 1 45%; min-width:220px; }
+  .bilingual .ar { direction:rtl; text-align:right; }
+  .document-images { display:flex; gap:18px; justify-content:center; flex-wrap:wrap; margin:28px 0; }
+  .document-images .doc { flex:1 1 420px; max-width:48%; }
+  .document-images img { width:100%; height:auto; border:1px solid #ddd; border-radius:6px; display:block; }
+  .document-images .caption { margin-top:8px; font-weight:700; color:#333; text-align:center; }
+  .seals { display:flex; gap:18px; justify-content:space-around; margin-top:28px; flex-wrap:wrap; align-items:flex-end; }
+  .seal { text-align:center; min-width:120px; }
+  .seal img { max-width:120px; display:block; margin:0 auto 6px; }
+  .seal span { font-weight:700; display:block; color:#222; }
+  .signatures { display:flex; gap:18px; justify-content:space-around; margin-top:22px; flex-wrap:wrap; align-items:flex-end; }
+  .sig { text-align:center; min-width:160px; }
+  .sig img { max-width:180px; display:block; margin:0 auto 8px; }
+  .sig span { display:block; font-weight:700; color:#222; }
+  @media (max-width:760px) {
+    .bilingual > div { flex-basis:100%; }
+    .document-images .doc { max-width:100%; flex-basis:100%; }
+    .seals, .signatures { flex-direction:column; gap:12px; }
+    .logo { max-width:160px; }
   }
 </style>
 </head>
 <body>
   <div class="certificate">
-    <!-- لوگوی دانشگاه -->
+    <!-- لوگو -->
     <img src="sultan-qaboos.png" alt="Sultan Qaboos University Logo" class="logo">
 
     <h1>Certificate of Authenticity / شهادة أصالة الوثيقة</h1>
     <h2>Doctorate Degree / درجة الدكتوراه</h2>
 
-    <!-- بخش دو زبانه -->
+    <!-- متن دو زبانه -->
     <div class="bilingual">
       <div>
         <p><strong>Full Name:</strong> Hossein Shahbazi</p>
@@ -98,6 +53,7 @@
         <p><strong>Date of Issuance:</strong> 20 January 2025 CE / 19 Rajab 1446 AH</p>
         <p>This certificate is issued by Sultan Qaboos University, Oman, confirming that the above-mentioned individual has been awarded a Doctorate degree through a scholarship program and in collaboration with international students and faculty.</p>
       </div>
+
       <div class="ar">
         <p><strong>الاسم الكامل:</strong> حسین شهبازی</p>
         <p><strong>رقم الشهادة:</strong> 65654585</p>
@@ -108,35 +64,48 @@
       </div>
     </div>
 
-    <!-- سطر مهرها -->
+    <!-- ✅ تصاویر مدرک و ریزنمرات -->
+    <div class="document-images">
+      <div class="doc">
+        <img src="Ph.D.jpg" alt="Ph.D Degree of Hossein Shahbazi">
+        <div class="caption">Ph.D Degree</div>
+      </div>
+      <div class="doc">
+        <img src="Official-Academic-Transcript-of-Hossein-Shahbazi,-Doctoral-Program-(Ph.D.)-001.jpg"
+             alt="Official Academic Transcript of Hossein Shahbazi">
+        <div class="caption">Official Academic Transcript</div>
+      </div>
+    </div>
+
+    <!-- مهرها -->
     <div class="seals">
-      <div>
-        <img src="seal-university.png" alt="خاتم الجامعه"><br>
+      <div class="seal">
+        <img src="seal-university.png" alt="خاتم الجامعه">
         <span>خاتم الجامعه</span>
       </div>
-      <div>
-        <img src="seal-grad.png" alt="عمید الدراسات العلیا"><br>
+      <div class="seal">
+        <img src="seal-grad.png" alt="عمید الدراسات العلیا">
         <span>عمید الدراسات العلیا</span>
       </div>
-      <div>
-        <img src="seal-college.png" alt="عمید الکلیة"><br>
+      <div class="seal">
+        <img src="seal-college.png" alt="عمید الکلیة">
         <span>عمید الکلیة</span>
       </div>
     </div>
 
-    <!-- سطر امضاها -->
+    <!-- امضاها -->
     <div class="signatures">
-      <div>
-        <img src="Signature of the President of the University.png" alt="رئیس الجامعه"><br>
-        <span>رئیس الجامعه</span>
+      <div class="sig">
+        <img src="Signature of the President of the University.png" alt="Signature of the President of the University">
+        <span>رئیس الجامعه / President of the University</span>
       </div>
-      <div>
-        <img src="Signature of the Graduate Studies Dean.png" alt="عمید الدراسات العلیا"><br>
-        <span>عمید الدراسات العلیا</span>
+      <div class="sig">
+        <img src="Signature of the Graduate Studies Dean.png" alt="Signature of the Graduate Studies Dean">
+        <span>عمید الدراسات العلیا / Graduate Studies Dean</span>
       </div>
-      <div>
-        <img src="Signature of the Dean.png" alt="عمید الکلیة"><br>
-        <span>عمید الکلیة</span>
+      <div class="sig">
+        <img src="Signature of the Dean.png" alt="Signature of the Dean">
+        <span>عمید الکلیة / Dean</span>
       </div>
     </div>
 
