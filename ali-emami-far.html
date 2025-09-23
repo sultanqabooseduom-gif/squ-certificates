@@ -50,12 +50,24 @@
     text-align: right;
     direction: rtl;
   }
-  .seal {
-    text-align: center;
-    margin-top: 20px;
+  .seal, .signatures {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
   }
-  .seal img {
+  .seal img, .sig img {
     max-width: 150px;
+  }
+  .seal span, .sig span {
+    display: block;
+    font-weight: 700;
+    margin-top: 6px;
+    color: #222;
+  }
+  .sig {
+    text-align: center;
   }
 </style>
 </head>
@@ -84,8 +96,22 @@
 
     <!-- مهر اصلی دانشگاه در مرکز -->
     <div class="seal">
-      <img src="seal-university.png" alt="خاتم الجامعه"><br>
-      <span>خاتم الجامعه</span>
+      <div>
+        <img src="seal-university.png" alt="خاتم الجامعه">
+        <span>خاتم الجامعه</span>
+      </div>
+    </div>
+
+    <!-- امضاها -->
+    <div class="signatures">
+      <div class="sig">
+        <img src="Signature of the President of the University.png" alt="Signature of the President of the University">
+        <span>رئیس الجامعه / President of the University</span>
+      </div>
+      <div class="sig">
+        <img src="Signature of the Dean.png" alt="Signature of the Dean">
+        <span>عمید الکلیة / Dean</span>
+      </div>
     </div>
 
   </div>
