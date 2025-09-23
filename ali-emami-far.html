@@ -2,118 +2,98 @@
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Specialized Certificate - Ali Emami Far</title>
 <style>
   body {
     font-family: Arial, sans-serif;
-    margin: 50px;
-    background: #f9f9f9;
+    margin: 20px;
+    background:#f7f7f7;
+    color:#222;
   }
   .certificate {
     max-width: 900px;
     margin: auto;
-    padding: 50px;
+    padding: 40px;
     background: #fff;
-    border: 3px solid #2c3e50;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    text-align: center;
+    border: 2px solid #2c3e50;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+    text-align:center;
   }
   .logo {
-    max-width: 220px;
-    margin-bottom: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    max-width:220px;
+    margin:0 auto 20px;
+    display:block;
   }
-  h1 {
-    font-size: 28px;
-    color: #2c3e50;
-    margin-bottom: 20px;
-  }
-  p {
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: justify;
-    margin: 15px 0;
-  }
+  h1 { color:#2c3e50; margin-bottom:20px; font-size:24px; }
+  p { font-size:16px; line-height:1.6; margin:8px 0; text-align:justify; }
   .bilingual {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:20px; margin-bottom:30px;
   }
-  .bilingual div {
-    width: 48%;
-    text-align: left;
+  .bilingual > div { flex:1 1 45%; min-width:200px; }
+  .bilingual .ar { direction:rtl; text-align:right; }
+  .seals {
+    display:flex; justify-content:center; gap:50px; margin-bottom:30px; flex-wrap:wrap;
   }
-  .bilingual div.ar {
-    text-align: right;
-    direction: rtl;
+  .seal { text-align:center; }
+  .seal img { max-width:150px; display:block; margin:0 auto 6px; }
+  .seal span { font-weight:700; color:#222; display:block; }
+  .signatures {
+    display:flex; justify-content:center; gap:40px; flex-wrap:wrap;
   }
-  .seal, .signatures {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-  }
-  .seal img, .sig img {
-    max-width: 150px;
-  }
-  .seal span, .sig span {
-    display: block;
-    font-weight: 700;
-    margin-top: 6px;
-    color: #222;
-  }
-  .sig {
-    text-align: center;
+  .sig { text-align:center; }
+  .sig img { max-width:180px; display:block; margin:0 auto 8px; }
+  .sig span { display:block; font-weight:700; color:#222; }
+  @media(max-width:760px){
+    .bilingual>div { flex-basis:100%; }
+    .seals, .signatures { flex-direction:column; gap:15px; }
   }
 </style>
 </head>
 <body>
-  <div class="certificate">
-    <!-- لوگوی دانشگاه -->
-    <img src="sultan-qaboos.png" alt="Sultan Qaboos University Logo" class="logo">
+<div class="certificate">
+  <img src="sultan-qaboos.png" alt="Sultan Qaboos University Logo" class="logo">
 
-    <h1>Specialized Certificate / الشهادة التخصصية</h1>
+  <h1>Specialized Certificate / الشهادة التخصصية</h1>
 
-    <!-- بخش دو زبانه -->
-    <div class="bilingual">
-      <div>
-        <p><strong>Name:</strong> Mr. Ali Emami Far</p>
-        <p><strong>Certificate Number:</strong> 3204-128723</p>
-        <p><strong>Iranian ID Number:</strong> 0021687919</p>
-        <p>This specialized certificate must be authenticated with the Sultan Qaboos University hologram in Oman, and its validity can always be verified through this page.</p>
-      </div>
-      <div class="ar">
-        <p><strong>الاسم:</strong> السیّد علی امامی فر</p>
-        <p><strong>رقم الشهادة:</strong> 3204-۱۲۸۷۲۳</p>
-        <p><strong>رقم الهوية [ایران]:</strong> 0021687919</p>
-        <p>يجب أن تكون هذه الشهادة التخصصية مُصادَقَةً بهُولوغرام جامعة السلطان قابوس في عمان، ويمكن دائماً التحقق من صحة اعتمادها من خلال هذه الصفحة.</p>
-      </div>
+  <div class="bilingual">
+    <div>
+      <p><strong>Name:</strong> Mr. Ali Emami Far</p>
+      <p><strong>Certificate Number:</strong> 3204-128723</p>
+      <p><strong>Iranian ID Number:</strong> 0021687919</p>
+      <p>This specialized certificate must be authenticated with the Sultan Qaboos University hologram in Oman, and its validity can always be verified through this page.</p>
     </div>
-
-    <!-- مهر اصلی دانشگاه در مرکز -->
-    <div class="seal">
-      <div>
-        <img src="seal-university.png" alt="خاتم الجامعه">
-        <span>خاتم الجامعه</span>
-      </div>
+    <div class="ar">
+      <p><strong>الاسم:</strong> السیّد علی امامی فر</p>
+      <p><strong>رقم الشهادة:</strong> 3204-۱۲۸۷۲۳</p>
+      <p><strong>رقم الهوية [ایران]:</strong> 0021687919</p>
+      <p>يجب أن تكون هذه الشهادة التخصصية مُصادَقَةً بهُولوغرام جامعة السلطان قابوس في عمان، ويمكن دائماً التحقق من صحة اعتمادها من خلال هذه الصفحة.</p>
     </div>
-
-    <!-- امضاها -->
-    <div class="signatures">
-      <div class="sig">
-        <img src="Signature of the President of the University.png" alt="Signature of the President of the University">
-        <span>رئیس الجامعه / President of the University</span>
-      </div>
-      <div class="sig">
-        <img src="Signature of the Dean.png" alt="Signature of the Dean">
-        <span>عمید الکلیة / Dean</span>
-      </div>
-    </div>
-
   </div>
+
+  <!-- مهرها -->
+  <div class="seals">
+    <div class="seal">
+      <img src="seal-university.png" alt="خاتم الجامعه">
+      <span>خاتم الجامعه</span>
+    </div>
+    <div class="seal">
+      <img src="seal-college.png" alt="عمید الکلیة">
+      <span>عمید الکلیة</span>
+    </div>
+  </div>
+
+  <!-- امضاها -->
+  <div class="signatures">
+    <div class="sig">
+      <img src="Signature of the President of the University.png" alt="Signature of the President of the University">
+      <span>رئیس الجامعه / President of the University</span>
+    </div>
+    <div class="sig">
+      <img src="Signature of the Dean.png" alt="Signature of the Dean">
+      <span>عمید الکلیة / Dean</span>
+    </div>
+  </div>
+</div>
 </body>
 </html>
