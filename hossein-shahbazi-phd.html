@@ -25,59 +25,30 @@
     margin-left: auto;
     margin-right: auto;
   }
-  h1 {
-    font-size: 28px;
-    color: #2c3e50;
-    margin-bottom: 20px;
-  }
-  h2 {
-    font-size: 22px;
-    color: #2c3e50;
-    margin-bottom: 30px;
-  }
-  p {
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: justify;
-    margin: 15px 0;
-  }
+  h1 { font-size: 28px; color: #2c3e50; margin-bottom: 20px; }
+  h2 { font-size: 22px; color: #2c3e50; margin-bottom: 30px; }
+  p { font-size: 18px; line-height: 1.6; text-align: justify; margin: 15px 0; }
   .bilingual {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .bilingual div {
-    width: 48%;
-    text-align: left;
-  }
-  .bilingual div.ar {
-    text-align: right;
-    direction: rtl;
-  }
-  .extra-images {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-  .extra-images img {
-    max-width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
+  .bilingual div { width: 48%; text-align: left; }
+  .bilingual div.ar { text-align: right; direction: rtl; }
   .seals {
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
   }
-  .seals div {
-    text-align: center;
+  .seals div { text-align: center; }
+  .seals img { max-width: 120px; }
+  .signatures {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
   }
-  .seals img {
-    max-width: 120px;
-  }
+  .signatures div { text-align: center; }
+  .signatures img { max-width: 180px; }
 </style>
 </head>
 <body>
@@ -108,19 +79,7 @@
       </div>
     </div>
 
-    <!-- تصاویر مدارک -->
-    <div class="extra-images">
-      <div>
-        <img src="Ph.D.jpg" alt="Ph.D Certificate">
-        <p>Ph.D Certificate</p>
-      </div>
-      <div>
-        <img src="Official-Academic-Transcript-of-Hossein-Shahbazi,-Doctoral-Program-(Ph.D.)-001.jpg" alt="Transcript">
-        <p>Official Transcript</p>
-      </div>
-    </div>
-
-    <!-- سطر مهرها با ترتیب اصلاح‌شده -->
+    <!-- سطر مهرها -->
     <div class="seals">
       <div>
         <img src="seal-university.png" alt="خاتم الجامعه"><br>
@@ -133,6 +92,22 @@
       <div>
         <img src="seal-college.png" alt="عمید الکلیة"><br>
         <span>عمید الکلیة</span>
+      </div>
+    </div>
+
+    <!-- بخش امضا: ترتیب از پایین به بالا -->
+    <div class="signatures">
+      <div>
+        <img src="Signature of the Head of Graduate Studies.png" alt="Signature of the Head of Graduate Studies"><br>
+        <span>Head of Graduate Studies / رئیس الدراسات العلیا</span>
+      </div>
+      <div>
+        <img src="Signature of the Graduate Studies Dean.png" alt="Signature of the Graduate Studies Dean"><br>
+        <span>Graduate Studies Dean / عمید الدراسات العلیا</span>
+      </div>
+      <div>
+        <img src="Signature of the Dean.png" alt="Signature of the Dean"><br>
+        <span>Dean / العمید</span>
       </div>
     </div>
 
